@@ -17,7 +17,7 @@ footer.href = "https://www.instagram.com/randy.moto/";
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire("Hallo Grace, Eheem selamat pagiiiii", "Aku punya sesuatu nih buat kamu, penasaran ga?", "question").then(function () {
     Swal.fire("Jawab yang jujur ya, penasaran ga?").then(function () {
-      Swal.fire("Tebak dulu aku mau kasih apa", "", "question").then(function () {
+      Swal.fire("Tebak dulu aku mau kasih apa", "", "success").then(function () {
         const {value: name} = Swal.fire({
           title: 'Coba tebak ketik dibawah',
           input: 'text',
