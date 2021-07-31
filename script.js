@@ -19,8 +19,8 @@ document.querySelector(".tombol").addEventListener('click', function () {
     title: 'Hallo Grace! Eheem selamat pagiiiii',
     text: 'Aku punya sesuatu nih buat kamu, penasaran ga?',
     imageUrl: 'https://i.pinimg.com/originals/eb/f3/8d/ebf38d740935113cb2ad61db9d7b898c.gif',
-    imageWidth: 400,
-    imageHeight: 200,
+    imageWidth: 460,
+    imageHeight: 498,
     imageAlt: 'Custom image',}).then(function () {
     Swal.fire("Jawab yang jujur ya, penasaran ga?").then(function () {
       Swal.fire("Tebak dulu aku mau kasih apa", "", "question").then(function () {
