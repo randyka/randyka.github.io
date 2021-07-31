@@ -37,7 +37,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
             }
           }
         }).then(function () {
-            Swal.fire("Ah salaah, yeeee bukan itu yaaa").then(function () {
+            Swal.fire("Ah salaah", "yeeee bukan itu yaaa","warning").then(function () {
                 Swal.fire("Eh tapi sebelumnya aku mau tanya sesuatu").then(function () {
                     const pertanyaan = Swal.fire({
                         title: `Boleh ga aku deketin kamu by??`,
@@ -67,7 +67,13 @@ document.querySelector(".tombol").addEventListener('click', function () {
                                         }).then((result) => {
                                         /* Read more about isConfirmed, isDenied below */
                                         if (result.isConfirmed) {
-                                            Swal.fire(`Ok udah sih itu aja`,'success').then(function () {
+                                            Swal.fire({
+                                                title: 'Ok udah sih itu aja',
+                                                text: '',
+                                                imageUrl: 'https://i.pinimg.com/originals/eb/f3/8d/ebf38d740935113cb2ad61db9d7b898c.gif',
+                                                imageWidth: 498,
+                                                imageHeight: 474,
+                                                imageAlt: 'Custom image',}).then(function () {
                                                 Swal.fire('Oia lupa mau ngasih sesuatu, hehehe').then(function () {
                                                     Swal.fire('Yaudah surprise pertama nya click ikon hati di paling bawah')})
                                                     })} 
