@@ -19,10 +19,10 @@ document.querySelector(".tombol").addEventListener('click', function () {
     title: 'Hallo Grace! Eheem selamat pagiiiii',
     text: 'Aku punya sesuatu nih buat kamu, penasaran ga?',
     imageUrl: 'https://i.pinimg.com/originals/eb/f3/8d/ebf38d740935113cb2ad61db9d7b898c.gif',
-    imageWidth: 460,
-    imageHeight: 498,
+    imageWidth: 249,
+    imageHeight: 230,
     imageAlt: 'Custom image',}).then(function () {
-    Swal.fire("Jawab yang jujur ya, penasaran ga?").then(function () {
+    Swal.fire("Jawab yang jujur ya, penasaran ga?","", "warning").then(function () {
       Swal.fire("Tebak dulu aku mau kasih apa", "", "question").then(function () {
         const {value: name} = Swal.fire({
           title: 'Coba tebak ketik dibawah',
@@ -70,9 +70,9 @@ document.querySelector(".tombol").addEventListener('click', function () {
                                             Swal.fire({
                                                 title: 'Ok udah sih itu aja',
                                                 text: '',
-                                                imageUrl: 'https://i.pinimg.com/originals/eb/f3/8d/ebf38d740935113cb2ad61db9d7b898c.gif',
-                                                imageWidth: 498,
-                                                imageHeight: 474,
+                                                imageUrl: 'https://i.pinimg.com/originals/9f/3a/91/9f3a91ff7006f90b1c4f6d4e25a957ae.gif',
+                                                imageWidth: 237,
+                                                imageHeight: 249,
                                                 imageAlt: 'Custom image',}).then(function () {
                                                 Swal.fire('Oia lupa mau ngasih sesuatu, hehehe').then(function () {
                                                     Swal.fire('Yaudah surprise pertama nya click ikon hati di paling bawah')})
