@@ -15,9 +15,15 @@ footer.innerHTML = sender;
 footer.href = "https://www.instagram.com/randy.moto/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo Grace, Eheem selamat pagiiiii", "Aku punya sesuatu nih buat kamu, penasaran ga?", "question").then(function () {
+  Swal.fire({
+    title: 'Hallo Grace! Eheem selamat pagiiiii',
+    text: 'Aku punya sesuatu nih buat kamu, penasaran ga?',
+    imageUrl: 'https://i.pinimg.com/originals/eb/f3/8d/ebf38d740935113cb2ad61db9d7b898c.gif',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',}).then(function () {
     Swal.fire("Jawab yang jujur ya, penasaran ga?").then(function () {
-      Swal.fire("Tebak dulu aku mau kasih apa", "", "success").then(function () {
+      Swal.fire("Tebak dulu aku mau kasih apa", "", "question").then(function () {
         const {value: name} = Swal.fire({
           title: 'Coba tebak ketik dibawah',
           input: 'text',
@@ -44,6 +50,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                         if (result.isConfirmed) {
                             Swal.fire({
                                 title: `Selama satu bulan jangan cuekin aku ya, janji?`,
+                                icon: 'success',
                                 showDenyButton: true,
                                 showCancelButton: false,
                                 confirmButtonText: `Iya janji`,
@@ -52,6 +59,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                                   if (result.isConfirmed) {
                                     Swal.fire({
                                         title: `Terus selama 1 bulan jangan anggep aku cuma temen doang, Okey?`,
+                                        icon: 'success',
                                         showDenyButton: true,
                                         showCancelButton: false,
                                         confirmButtonText: `Iya Okey bawel`,
@@ -59,7 +67,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                                         }).then((result) => {
                                         /* Read more about isConfirmed, isDenied below */
                                         if (result.isConfirmed) {
-                                            Swal.fire(`Ok udah sih itu aja`).then(function () {
+                                            Swal.fire(`Ok udah sih itu aja`,'success').then(function () {
                                                 Swal.fire('Oia lupa mau ngasih sesuatu, hehehe').then(function () {
                                                     Swal.fire('Yaudah surprise pertama nya click ikon hati di paling bawah')})
                                                     })} 
